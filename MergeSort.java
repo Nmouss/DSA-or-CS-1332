@@ -1,7 +1,11 @@
+import java.util.*;
 public class MergeSort{ // pretty basic sorting algorithm
   public static void main(String[] args){
     Integer[] array = {4, 3, 6, 100, 8, 9, 54, 1, 0};
+    Integer[] FINAL_ARRAY = mergesort(array);
+    System.out.println(Arrays.toString(FINAL_ARRAY));
   }
+  
   public static Integer[] mergesort(Integer[] array){
     if (array.length <= 1){
       return array;
@@ -19,6 +23,7 @@ public class MergeSort{ // pretty basic sorting algorithm
     Integer[] right_half = mergesort(right);
     return merge(left_half, right_half);
   }
+  
   public static Integer[] merge(Integer[] left, Integer[] right){
     int i = 0;
     int j = 0;
