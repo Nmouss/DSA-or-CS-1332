@@ -20,6 +20,32 @@ public class MergeSort{ // pretty basic sorting algorithm
     return merge(left_half, right_half);
   }
   public static Integer[] merge(Integer[] left, Integer[] right){
-    
-  }
+    int i = 0;
+    int j = 0;
+    int index = 0;
+    Integer[] temp_array = new Integer[left.length + right.length];
+    while ((i < left.length) && (j < right.length)){
+      if (left[i] < right[j]){
+        temp_array[index] = left[i];
+        index++;
+        i++;
+      }
+      else{
+        temp_array[index] = right[j];
+        index++;
+        j++;
+      }
+    }
+    while (i < left.length){
+      temp_array[index] = left[i];
+      i++;
+      index++;
+    }
+    while (j < right.length){
+      temp_array[index] = right[j];
+      j++;
+      index++;
+    }
+    return temp_array;
+  }  
 }
