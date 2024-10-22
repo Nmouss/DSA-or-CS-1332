@@ -5,7 +5,7 @@ public class QuickSort{
     QuickSort(array);
     System.out.println(Arrays.toString(array));
   }
-  public static void QuickSort(int left, int right, Integer[] array){
+  public static void quicksort(int left, int right, Integer[] array){
     if (left < right){
       mid = helper(left right, array);
       QuickSort(mid + 1, right, array);
