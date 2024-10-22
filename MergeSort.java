@@ -1,6 +1,6 @@
 public class MergeSort{ // pretty basic sorting algorithm
   public static void main(String[] args){
-    
+    Integer[] array = {4, 3, 6, 100, 8, 9, 54, 1, 0};
   }
   public static Integer[] mergesort(Integer[] array){
     if (array.length <= 1){
