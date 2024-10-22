@@ -16,7 +16,7 @@ public class MergeSort{ // pretty basic sorting algorithm
     for (int i = 0; i < mid; i++){ // copying arrays from the first half to left (I could have used the Arrays class but lets do everything manually)
       left[i] = array[i];
     }
-    for (int i = mid; i < length; i++){ // copying right half of the array
+    for (int i = mid; i < array.length; i++){ // copying right half of the array
       right[i - mid] = array[i]; // if i = 4 and mid = 3 then, left[1] = ar
     }
     Integer[] left_half = mergesort(left);
