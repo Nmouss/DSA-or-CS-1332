@@ -3,7 +3,7 @@ public class Node<T>{
   private Node<T> right;
   private T data;
   public Node(){
-    this{null);
+    this(null);
   }
   public Node(T data){
     this(data, null, null);
