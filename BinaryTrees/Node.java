@@ -28,7 +28,7 @@ public class Node<T>{
   public void setRightNode(Node<T> node){
     this.right = node;
   }
-  public void setRootNode(T data){
+  public void setRootData(T data){
     this.data = data;
   }
 }
